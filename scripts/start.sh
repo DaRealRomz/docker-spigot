@@ -31,5 +31,5 @@ rm -f $HOME/run/console
 mkfifo $HOME/run/console
 
 # start the server
-java $JVM_ARGS -jar $HOME/jars/spigot-$VERSION.jar < <(tail -f $HOME/run/console)
+java $JVM_ARGS -jar $HOME/jars/spigot-$VERSION.jar nogui < <(tail -f $HOME/run/console)
 rm -f rm -f $HOME/run/console
